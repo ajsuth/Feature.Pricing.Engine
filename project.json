@@ -1,0 +1,35 @@
+{
+	"version": "1.0.0-*",
+	"dependencies": {
+		"Sitecore.Commerce.Core": "1.1.819",
+		"Sitecore.Commerce.Plugin.Pricing": "1.1.819",
+		"Sitecore.Commerce.Plugin.Management": "1.1.819"
+	},
+	"frameworks": {
+		"net461": {
+		}
+	},
+    "configurations": {
+        "Release": {
+            "buildOptions": {
+                "compile": "../Shared/VersionInfo.cs",
+                "xmlDoc": true,
+                "warningsAsErrors": true,
+                "optimize": true
+            }
+        },
+        "Debug": {
+            "buildOptions": {
+                "warningsAsErrors": true
+            }
+        },
+        "Staging": {
+            "buildOptions": {
+                "warningsAsErrors": true
+            }
+        }
+    },
+    "buildOptions": {
+        "nowarn": [ "1591" ]
+    }
+}
